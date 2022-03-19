@@ -9,7 +9,7 @@
                 border: 2px solid darkgreen;
                 padding: 5px;
                 border-radius: 5px;
-                background-color: darkcyan;
+                background-color:black;
                 color: white;
             }
             @media screen  and (orientation: landscape){
@@ -24,11 +24,12 @@
             @media screen  and (orientation: portrait){
                 li{
                     display: block;
-                    margin-right: 30px;
+                    margin-right: 20px;
+                    margin-bottom: 14px
                 }
                 ul{
-                    width: 80px;
-                    margin-left:-40px ;
+                    width: 120px;
+                    margin-left:-100px ;
                     transition: 3s;
                     font-size: 80px
                 }
@@ -38,6 +39,22 @@
                 ul:hover{
                     margin-left: 0px;
                     transition: 3s;
+                }
+
+                #fb{
+                    color:rgb(18, 115, 241) ;
+                    background-color: black;
+                    box-shadow: 3px 6px 9px rgb(73, 184, 235);
+                }
+                #in{
+                    color: rgb(212, 41, 11);
+                    background-color: black;
+                    box-shadow: 3px 6px 9px rgb(230, 75, 48);
+                }
+                #tw{
+                    color: skyblue;
+                    background-color: black;
+                    box-shadow: 3px 6px 9px rgb(73, 184, 235);
                 }
 
                 
@@ -50,9 +67,14 @@
                 
             }
 
-            body{
-              
+            @media screen  and (max-width:600px){
+                body{
+                    background-color: aqua;
+                }
+                
             }
+
+            
 
 
         </style>
@@ -60,9 +82,9 @@
     <body>
         <nav>
             <ul>
-                <li><span class="bi bi-facebook"></span><span class="menu-title">Facebook</span></li>
-                <li><span class="bi bi-twitter"></span><span class="menu-title">Twitter</span></li>
-                <li><span class="bi bi-instagram"></span><span class="menu-title">Instagram</span></li>
+                <li><span class="bi bi-facebook " id="fb"></span><span class="menu-title" >Facebook</span></li>
+                <li><span class="bi bi-twitter" id="tw"></span><span class="menu-title" >Twitter</span></li>
+                <li><span class="bi bi-instagram" id="in"></span><span class="menu-title" >Instagram</span></li>
             </ul>
         </nav>
     </body>
